@@ -9,6 +9,13 @@
 #   that are sent to both the admin API and Kong Manager, and any Dev Portal
 #   instances with authentication must create cookies that are sent to both
 #   the Portal and Portal API.
+
+# Declare variables to be passed into your templates.
+superuserPassword: CHANGEME
+adminGuiSessionConf: CHANGEME
+portalSessionConf: CHANGEME
+kongEnterpriseLicense: CHANGEME
+
 image:
   repository: kong/kong-gateway
   tag: 2.7.0.0-alpine
